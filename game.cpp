@@ -8,6 +8,7 @@
 #include <windows.h>
 #endif
 
+#define GL_GLEXT_PROTOTYPES 1
 #include <GL/gl.h>
 #include "SDL.h"
 #include <string.h>
