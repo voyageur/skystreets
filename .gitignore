@@ -1,0 +1,19 @@
+# Editor
+*.swp
+
+# Generated files
+*.o
+skystreets
+
+# Autotools
+.deps
+Makefile
+Makefile.in
+/autom4te.cache
+/aclocal.m4
+/compile
+/config.guess
+/config.log
+/config.status
+/configure
+/missing
