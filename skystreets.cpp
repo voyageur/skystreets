@@ -23,6 +23,7 @@
 #include <memory.h>
 #include <stdlib.h>
 #include "ss.h"
+#include "config.h"
 #include "levels.h"
 #include "explosion.h"
 #include "SDL_image.h"
@@ -269,8 +270,8 @@ int main(int argc, char *argv[])
 			     (fullscreen ? SDL_FULLSCREEN : 0));
 	if (fullscreen)
 		SDL_ShowCursor(0);
-	SDL_WM_SetCaption("SkyStreets v0.2.5", NULL);
-	printf("Starting SkyStreets v0.2.5\n");
+	SDL_WM_SetCaption(PACKAGE_STRING, NULL);
+	printf("Starting %s\n", PACKAGE_STRING);
 
 	state = MENU;
 	player.exploding = false;

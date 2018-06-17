@@ -1,5 +1,6 @@
-AC_INIT(skystreets, 0.2.5)
-AC_CONFIG_SRCDIR(skystreets.cpp)
+AC_INIT(SkyStreets, 0.2.5)
+AC_CONFIG_SRCDIR([skystreets.cpp])
+AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE
 AC_PROG_CXX
 AC_CONFIG_FILES([audio/Makefile gfx/Makefile levels/Makefile])
