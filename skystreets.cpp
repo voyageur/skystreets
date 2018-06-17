@@ -64,7 +64,7 @@ int fontLists[65];
 
 int shipList;
 
-char basePath[] = { DATAPATH };
+char basePath[64] = { DATAPATH };
 
 bool fullscreen = true;
 int nlvl = 0;

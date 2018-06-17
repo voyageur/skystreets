@@ -34,7 +34,7 @@
 #define UP 3
 #define FLOOR 5
 
-extern char basePath[];
+extern char basePath[64];
 
 //for holding bullets
 typedef struct bullet {

@@ -195,9 +195,8 @@ void Menu::runFrame()
 				int i=0;
 				for (i = 0;i<selected - 2;i++)
 					current = current->next;
-				char fullpath[256];
-				strcpy(fullpath, basePath);
-				strcat(fullpath, "levels/");
+				char fullpath[64];
+				strcpy(fullpath, "levels/");
 				strcat(fullpath, current->filename);
 				lvlLevel.clear();
 				game_Reset();
