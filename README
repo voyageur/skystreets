@@ -1,0 +1,20 @@
+Please read this document, it will only take a moment....  (And the GNU docs say
+I can assume that you've read this. So read it.) (And I know this project isn't
+actually  GNU,	but   their   standards   make	 sense,   so   I   use	 them)
+
+Install instructions are in INSTALL, but it's pretty standard  -  ./configure,
+make, make install. 
+
+At the moment, controls are hardcoded. Up and down arrow keys control you speed,
+left and right control movement.  Space is to jump,  as well as make a selection
+in the menus. Escape will drop you back to the menu. When you return to the game
+things may be a little weird (framerate, timing, you may  be  out  of  oxygen)
+
+One other thing, regarding spelling.  I'm  Australian,	so  I  use  Australian
+spellings in my code and documentation. This is very similar to British English,
+but not quite the same.  Just try to ignore it.  However, if you think	you've
+spotted an actual typo, feel free to send me an email so that I can correct it.
+
+If you want any files that you think I may have, but aren't in the distribution
+like the base skin for the ship (the uncoloured version) or the ship model, or
+anything  like	that,  go  ahead  and  email  me,  I'll  make  it   available.

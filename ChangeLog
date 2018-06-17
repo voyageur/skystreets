@@ -1,0 +1,66 @@
+<this is horrible out of date, just ignore it.>
+
+2003-12-17 14:32  rek
+
+	* skystreets.cpp: improved collisions detection
+
+2003-12-17 13:50  rek
+
+	* CREDITS, levels.cpp, levels.h, skystreets.cpp: Update to latest
+	  version
+
+2003-12-17 13:50  rek
+
+	* levels/: level1.lvl, level2.lvl, level3.lvl, level4.lvl,
+	  level5.lvl, level6.lvl: Simon Zwarts' level pack
+
+2003-12-15 10:36  rek
+
+	* gfx/ship.obj: Missing from the import
+
+2003-12-15 10:29  rek
+
+	* ChangeLog, EDITOR, INSTALL, LevelFormat, MakeWin.sh,
+	  Makefile.win, README, TODO, audio.cpp, explosion.h, glm.cpp,
+	  levels.cpp, menu.cpp, ss.h, text.h, baseskin.bmp, TexMap.tga,
+	  explosion.cpp, levels.h, COPYING, CREDITS, Makefile, audio.h,
+	  baseskin.png, glm.h, skystreets.cpp, ss, text.cpp,
+	  levels/level1.lvl, levels/level2.lvl, levels/level3.lvl,
+	  levels/level4.lvl, levels/level5.lvl, levels/level6.lvl,
+	  ship/ship.mtl, ship/skin.bmp, ship/oldship.bmp, ship/skin.png,
+	  ship/newship.bmp, ship/lpskin.bmp, ship/oldship.png,
+	  ship/ship.png, ship/newship.mtl, ship/ship.bmp, ship/render1.png,
+	  ship/diffuse.tga, ship/lpship.mtl, ship/lpskin.png,
+	  ship/ship.wings, ship/newship.wings, ship/lpship.wings,
+	  ship/newship.png, ship/diffuse2.tga, audio/engine.wav,
+	  audio/explosion.wav, gfx/ship.mtl, gfx/sunscene.png,
+	  gfx/skin.png, gfx/slippery.png, gfx/horseneb.png, gfx/boom.png,
+	  gfx/chequered.png, gfx/goal.png, gfx/speedup.png, gfx/sticky.png,
+	  gfx/burning.png, gfx/menubg.png, gfx/newship.mtl, gfx/rtile3.png,
+	  gfx/bigbg.png, gfx/lpship.mtl, gfx/rtile1.png, gfx/supply.png,
+	  gfx/font.png, gfx/nebula.png, gfx/rtile2.png, gfx/diffuse2.tga,
+	  gfx/menubg.dat: Imported sources
+
+2003-12-15 10:29  rek
+
+	* ChangeLog, EDITOR, INSTALL, LevelFormat, MakeWin.sh,
+	  Makefile.win, README, TODO, audio.cpp, explosion.h, glm.cpp,
+	  levels.cpp, menu.cpp, ss.h, text.h, baseskin.bmp, TexMap.tga,
+	  explosion.cpp, levels.h, COPYING, CREDITS, Makefile, audio.h,
+	  baseskin.png, glm.h, skystreets.cpp, ss, text.cpp,
+	  levels/level1.lvl, levels/level2.lvl, levels/level3.lvl,
+	  levels/level4.lvl, levels/level5.lvl, levels/level6.lvl,
+	  ship/ship.mtl, ship/skin.bmp, ship/oldship.bmp, ship/skin.png,
+	  ship/newship.bmp, ship/lpskin.bmp, ship/oldship.png,
+	  ship/ship.png, ship/newship.mtl, ship/ship.bmp, ship/render1.png,
+	  ship/diffuse.tga, ship/lpship.mtl, ship/lpskin.png,
+	  ship/ship.wings, ship/newship.wings, ship/lpship.wings,
+	  ship/newship.png, ship/diffuse2.tga, audio/engine.wav,
+	  audio/explosion.wav, gfx/ship.mtl, gfx/sunscene.png,
+	  gfx/skin.png, gfx/slippery.png, gfx/horseneb.png, gfx/boom.png,
+	  gfx/chequered.png, gfx/goal.png, gfx/speedup.png, gfx/sticky.png,
+	  gfx/burning.png, gfx/menubg.png, gfx/newship.mtl, gfx/rtile3.png,
+	  gfx/bigbg.png, gfx/lpship.mtl, gfx/rtile1.png, gfx/supply.png,
+	  gfx/font.png, gfx/nebula.png, gfx/rtile2.png, gfx/diffuse2.tga,
+	  gfx/menubg.dat: Initial revision
+

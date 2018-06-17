@@ -1,0 +1,30 @@
+This list contains everything that needs to be done for SkyStreets
+
+: Done
+= Partially done
+- Not started
+? WTF?
+
+:Fix throttling problem (DONE)
+:Fix annoying tail problem (tail not being accounted for when figuring out floors)(DONE)
+=Allow turning while in the air (or more, on the bounce)(DONE) (needs to be adjusted... can be used to cheat)
+=Add in level editor (Mostly done, interface needs redesigning)(DELETED)
+:Add in complete text rendering system (requires usable font block) (DONE)
+=Redo menu with new text system(DONE, but needs tweaking)
+:Make the loop more efficient (#include <linux/shed.h>; yield) (DONE, using SDL)
+(MAYBE)Software Renderer?
+=Find out why explosion sound is inconsistent
+=Add shadows (DONE, but could do with improvement - stencil buffer)
+-Change level ending to have camera rotate around ship
+=Improve render speed - probably vertex arrays (Most important in Level::Render, which is 45.5% of the running time)(DONE);
+=Proper shading on all blocks (Partially done)
+-Config file
+=Optimise checkCollisions()
+-General rewrite of all source
+	:text.cpp
+	:skystreets.cpp
+	:audio.cpp
+	-game.cpp
+	:explosion.cpp
+	-levels.cpp
+	-menu.cpp

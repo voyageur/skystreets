@@ -1,0 +1,2 @@
+-Right now, the ship seems to jitter on certain tracks. Enable
+antialiasing fixes this, if you can afford the performance hit.

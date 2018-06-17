@@ -1,0 +1,66 @@
+I figured that if I want anybody to mess with the code, some documentation about
+it might help. Firstly, my code tends to be very messy, skystreets.cpp in particular.
+I'm trying to clean it up, but it doesn't look like that's going to be done for a while.
+I also abuse C++ just for some minor conveniences, so a lot of my code is actually
+just normal C.
+
+I use the same coding style as the Linux kernel. I won't bother repeating it here,
+since you can get it out of the kernel source tree. Using indent, it's -kr -i8.
+(Kerningham and Ritchie, indentation is 8 spaces - a real tab).
+
+Here are descriptions of all the files:
+
+skystreets.cpp: Initialisation stuff.
+
+game.cpp: The actual game loop.
+
+levels.cpp: The level loading, saving (for the editor) and rendering code. It
+	doesn't actually do all that much, and is pretty simple.
+
+audio.cpp: Audio code. There's almost nothing here, it just loads and plays
+	sound. It relies heavily on the SDL audio code.
+
+explosion.cpp: Particle code. This is a basic particle engine, and handles
+	movement, rendering, generation, and just about everything else. Not
+	particularly complex, but needs some improvement (there are performance
+	issues).
+
+glm.cpp: Nate Robbins' excellent .OBJ model loading code. I should probably
+	strip this down since I barely use any of it, but so far I haven't
+	touched it at all. Very useful.
+
+menu.cpp: Handles the menus. I'm going to rewrite this to make use of the text
+	renderer very soon. This code does almost nothing right now.
+
+text.cpp: My text renderer. It uses texture-mapped fonts. This is probably
+	the neatest code out of all the files.
+
+To save you the trouble of unravelling the code, here's the basic flow. As with
+any program, the entry point is main() (under windows, the SDLmain lib handles
+this). It runs through all the initialisation - SDL, OpenGL, audio, levels, 
+whatever. When it reaches the event loop, it checks for SDL events, and will
+handle one if there's one available. Whether or not an event was handled, it 
+then calls whichever function is appropriate to the current state of the game:
+gDrawScene for the actual game, mDrawScene for the menu, gRunEditor for the
+editor.
+
+I won't bother to describe gRunEditor (too messy, and incomplete) or mDrawScene
+(too simple, about to be replaced). The first thing gDrawScene does is to calculate
+how much time has passed since the last frame, so that movement can be scaled 
+against that value. It also plays with the time value, depending on whether
+or not the player is on the ground (it makes it more interesting). It then
+draws the background (one giant textured quad). Then, it moves the camera into
+position for the rest of the rendering. Then comes the actual game code - 
+checking for collisions, checking what kind of terrain the ship is on, moving
+the ship. It then draws the ship, the speed, fuel and oxygen bars, the frame 
+counter, the gravity, and a little red square in the bottom right of the screen.
+
+From here, you should be able to find whatever you need in the code. the program
+ctags will help immensely if you intend to do any major editing work,  I recommend
+you install it and read the man page. If you still need help with anything, email
+me.
+
+One other note... I code in vi. The little {{{ and }}} you see everywhere are a
+vi feature - all the code inside there gets compressed into one line so I don't
+have to see it if I'm not working on it. If you're not using vi, or don't use
+folding, just ignore them.

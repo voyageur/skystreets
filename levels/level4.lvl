@@ -1,0 +1,6 @@
+4 nebula.png level5.lvl 15 8 500
+  bg image  next lvl oxy fuel grav
+{-1 -1 0}{1 0 8} 1
+{-2 -1 11}{-1 0 19} 1
+{1 -1 22}{2 0 33} 1
+{-1 -1 33}{1 0 34} 9

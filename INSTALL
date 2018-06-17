@@ -1,0 +1,2 @@
+I've turned the install into a standard GNU one - ./configure, make, make
+install. Same as any other program.
