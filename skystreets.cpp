@@ -269,8 +269,8 @@ int main(int argc, char *argv[])
 			     (fullscreen ? SDL_FULLSCREEN : 0));
 	if (fullscreen)
 		SDL_ShowCursor(0);
-	SDL_WM_SetCaption("SkyStreets v0.2.4", NULL);
-	printf("Starting SkyStreets v0.2.4\n");
+	SDL_WM_SetCaption("SkyStreets v0.2.5", NULL);
+	printf("Starting SkyStreets v0.2.5\n");
 
 	state = MENU;
 	player.exploding = false;
