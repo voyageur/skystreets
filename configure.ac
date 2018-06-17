@@ -7,7 +7,6 @@ AC_CONFIG_FILES([audio/Makefile gfx/Makefile levels/Makefile])
 SDL_VERSION=1.2.0
 AM_PATH_SDL($SDL_VERSION,:,AC_MSG_ERROR([*** SDL version $SDL_VERSION not found!])
 )
-MDL_HAVE_OPENGL
 CFLAGS="$CFLAGS $SDL_CFLAGS $GL_CFLAGS"
 LIBS="$LIBS $SDL_LIBS $GL_LIBS"
 AC_OUTPUT(Makefile)
