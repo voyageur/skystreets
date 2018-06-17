@@ -1,8 +1,6 @@
-AC_INIT(skystreets.cpp)
-AC_CANONICAL_BUILD
-AC_CANONICAL_HOST
-AC_CANONICAL_TARGET
-AM_INIT_AUTOMAKE(skystreets, 0.2.4)
+AC_INIT(skystreets, 0.2.5)
+AC_CONFIG_SRCDIR(skystreets.cpp)
+AM_INIT_AUTOMAKE
 AC_PROG_CXX
 AC_CONFIG_FILES([audio/Makefile gfx/Makefile levels/Makefile])
 SDL_VERSION=1.2.0
