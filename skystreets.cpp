@@ -72,11 +72,6 @@ int nlvl = 0;
 SDL_Surface *screen;
 // }}}
 
-void debugprint(char *message)
-{
-	fprintf(debug, message);
-}
-
 Uint32 AddFrames(Uint32 interval, void *param)
 {
 	fps = g_frames;
@@ -249,7 +244,6 @@ void system_loadTextures()
 int main(int argc, char *argv[])
 {
 
-	debug = fopen("debug", "w");
 	static long levelTime;
 	int lvlno = 0; //level name can't be arg 0 because that's filename
 	if (system_handleCommandLine(argc, argv, &lvlno))
@@ -302,7 +296,6 @@ int main(int argc, char *argv[])
 	InitGL();
 	menu.init();
 	text.init();
-	debugprint("GL Initialized\n");
 
 	strcpy(fullpath, basePath);
 	strcat(fullpath, "audio/explosion.wav");
@@ -328,8 +321,6 @@ int main(int argc, char *argv[])
 	
 	glmDelete(model);
 	glmDelete(model2);
-
-	debugprint("Lists built\n");
 
 	system_loadTextures();
 
