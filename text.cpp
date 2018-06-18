@@ -80,7 +80,7 @@ void Text::buildLists()
 	}
 }
 
-int Text::drawf(char *fmt, ...)
+int Text::drawf(const char *fmt, ...)
 {
 	glPushMatrix();
 	va_list ap;

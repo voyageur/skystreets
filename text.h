@@ -3,7 +3,7 @@ class Text {
       public:
 	Text();
 	~Text();
-	int drawf(char *fmt, ...);
+	int drawf(const char *fmt, ...);
 	void drawNo(int number);
 	void init();
       private:

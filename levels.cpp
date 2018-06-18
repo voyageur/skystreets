@@ -17,7 +17,7 @@
 #include "levels.h"
 #include "ss.h"
 
-bool LoadTexture(char *filename, int i);
+bool LoadTexture(const char *filename, int i);
 
 extern bool sysPath;
 
@@ -43,7 +43,7 @@ Level::~Level()
 	}
 }
 
-bool Level::initialize(char *filename)
+bool Level::initialize(const char *filename)
 {
 
 	strcpy(fname, basePath);

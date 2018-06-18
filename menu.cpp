@@ -35,7 +35,7 @@ extern Uint32 g_time;
 extern long currentTime;
 extern Level lvlLevel;
 
-void Menu::addEntry(char *name)
+void Menu::addEntry(const char *name)
 {
 	menuEntry *current = &head;
 	while (current->next != NULL){

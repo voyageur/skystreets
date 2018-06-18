@@ -1,4 +1,4 @@
-typedef struct lvlpoint {
+struct lvlpoint {
 
 	float blx;
 	float bly;
@@ -13,14 +13,14 @@ typedef struct lvlpoint {
 	struct lvlpoint *prev;
 };
 
-typedef struct block {
+struct block {
 	float x1, y1, z1;
 	float x2, y2, z2;
 	float x3, y3, z3;
 	float x4, y4, z4;
 };
 
-typedef struct texcoord {
+struct texcoord {
 	float x1, y1;
 	float x2, y2;
 	float x3, y3;
@@ -43,7 +43,7 @@ class Level {
 	FILE *data;
 	 Level();
 	~Level();
-	bool initialize(char *filename);
+	bool initialize(const char *filename);
 	bool loadNext();
 	void Render( /*float front, float back */ );
 	void Add(lvlpoint * newPoint);

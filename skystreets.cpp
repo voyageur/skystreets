@@ -163,7 +163,7 @@ void InitGL()
  * slot i. It will append the system path onto the filename.
  */
 
-bool LoadTexture(char *filename, int i)
+bool LoadTexture(const char *filename, int i)
 {
 	SDL_Surface *bgrText;
 	SDL_Rect area;

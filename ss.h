@@ -37,7 +37,7 @@
 extern char basePath[64];
 
 //for holding bullets
-typedef struct bullet {
+struct bullet {
       public:
 	float x;
 	float spdx;
@@ -53,14 +53,14 @@ typedef struct bullet {
 };
 
 //just a vector
-typedef struct vector {
+struct vector {
 	float x;
 	float y;
 	float z;
-} vector;
+};
 
 //actors - character, monsters, other shit.
-typedef struct actor {
+struct actor {
 	float x;
 	float y;
 	float z;

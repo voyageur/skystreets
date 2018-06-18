@@ -4,7 +4,7 @@
  * coded by ReKleSS [rekless@fastmail.fm]
  */
 
-typedef struct menuEntry {
+struct menuEntry {
 	char *filename;
 	char *name;
 	struct menuEntry *next;
@@ -22,7 +22,7 @@ class Menu {
 		int elements;
 		bool whacked[256];
 		menuEntry head;
-		void addEntry(char *name);
+		void addEntry(const char *name);
 };
 		
 void initMenu();

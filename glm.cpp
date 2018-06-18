@@ -185,7 +185,7 @@ GLfloat *_glmWeldVectors(GLfloat * vectors, GLuint * numvectors,
 
 /* _glmFindGroup: Find a group in the model
  */
-GLMgroup *_glmFindGroup(GLMmodel * model, char *name)
+GLMgroup *_glmFindGroup(GLMmodel * model, const char *name)
 {
 	GLMgroup *group;
 
@@ -203,7 +203,7 @@ GLMgroup *_glmFindGroup(GLMmodel * model, char *name)
 
 /* _glmAddGroup: Add a group to the model
  */
-GLMgroup *_glmAddGroup(GLMmodel * model, char *name)
+GLMgroup *_glmAddGroup(GLMmodel * model, const char *name)
 {
 	GLMgroup *group;
 
@@ -224,7 +224,7 @@ GLMgroup *_glmAddGroup(GLMmodel * model, char *name)
 	return group;
 }
 
-/* _glmFindGroup: Find a material in the model
+/* _glmFindMaterial: Find a material in the model
  */
 GLuint _glmFindMaterial(GLMmodel * model, char *name)
 {
