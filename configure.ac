@@ -1,4 +1,4 @@
-AC_INIT(SkyStreets, 0.2.5)
+AC_INIT([SkyStreets],[0.2.5])
 AC_CONFIG_SRCDIR([skystreets.cpp])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE
@@ -9,4 +9,5 @@ AM_PATH_SDL($SDL_VERSION,:,AC_MSG_ERROR([*** SDL version $SDL_VERSION not found!
 )
 CFLAGS="$CFLAGS $SDL_CFLAGS $GL_CFLAGS"
 LIBS="$LIBS $SDL_LIBS $GL_LIBS"
-AC_OUTPUT(Makefile)
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
